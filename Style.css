@@ -1,0 +1,37 @@
+.Header{
+    font-size: 200%;
+    text-align: center;
+}
+#Header2{
+    text-align: center;
+}
+#Photo{
+    width: 100px;
+    float: right;
+}
+#Labs td{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 75px;
+    text-align: center;
+    background-color: aquamarine;
+    
+}
+table#LabsContent td{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: aquamarine;
+}
+table#LabsContent #Information{
+   border: 1px solid black; 
+   border-radius: 10px;
+   width: 80%;
+   background-color: white;
+   text-align: left;
+   padding: 15px;
+   
+}
