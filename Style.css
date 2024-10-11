@@ -8,6 +8,8 @@
 #Photo{
     width: 100px;
     float: right;
+    position: relative;
+    bottom: 100px;
 }
 #Labs td{
     border: 1px solid black;
@@ -28,9 +30,10 @@ table#LabsContent td{
     background-color: aquamarine;
 }
 table#LabsContent #Information{
+   
    border: 1px solid black; 
    border-radius: 10px;
-   width: 80%;
+   width: 85%;
    background-color: white;
    text-align: left;
    padding: 15px;
