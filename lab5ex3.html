@@ -35,6 +35,55 @@
             <td>Лабораторна <br>Робота №9</td>
         </tr>
     </table>
+    <table id="LabsContent">
+        <tr>
+            <td><a href="./lab5topic.html">Тема,Мета, Місце <br>розсташування сайту,звіту</a></td>
+            <td rowspan="7" id="Information">
+                <img src="./images/lab5ex3.1.png" alt=""><br>
+                <pre> 
+function ex3(){
+let arr1 = [1,2,3,4,5,6];
+let arr2 = [7,8,9,10,11,12];
+
+function makeArray(firstArray,secondArray,maxLength){
+    let newArr = firstArray.concat(secondArray);
+
+    if(newArr.length > maxLength){
+        console.log( newArr.slice(0,maxLength));
+    }
+    else{
+        console.log(newArr)
+    }
+}
+console.log(`----------Exercise3----------`)
+makeArray(arr1,arr2,13);
+makeArray(arr1,arr2,10);
+}</pre>
+                <img src="./images/lab5ex3.2.png" alt="">
+                
+            </td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex1.html">ЗАВДАННЯ№1 ></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex2.html">ЗАВДАННЯ№2</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex3.html">ЗАВДАННЯ№3</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex4.html">ЗАВДАННЯ№4</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex5.html">ЗАВДАННЯ№5</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5Conclusion.html">ВИСНОВКИ</a></td>
+        </tr>
+
+
+    </table>
 </main>
 </body>
 </html>

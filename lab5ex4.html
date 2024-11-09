@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <title>Report</title>
+</head>
+<body>
+    <Header>
+        <h1 class="Header">Звіти з лабораторних робіт</h1>
+        <h1 class="Header">з дисципліни "ІНТЕРНЕТ-ТЕХНОЛОГІЇ та ПРОЄКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h1>
+        <br>
+        <h2 id="Header2">Студента групи ІС-31 Данилюк Роман Олегович </h2>
+        <img id="Photo"  src="./images/Photo.JPG" alt="">
+        
+       
+    </Header>
+    
+    <main>
+        <br>
+        <br>
+        
+        <br>
+    <table id="Labs">
+        <tr>
+            <td><a href="./lab1.html">Лабораторна <br>Робота №1</a></td>
+            <td><a href="./lab2.html">Лабораторна <br>Робота №2</a></td>
+            <td><a href="./lab3.html">Лабораторна <br>Робота №3</a></td>
+            <td><a href="./lab4.html">Лабораторна <br>Робота №4</a></td>
+            <td><a href="./lab5.html">Лабораторна <br>Робота №5</a></td>
+            <td>Лабораторна <br>Робота №6</td>
+            <td>Лабораторна <br>Робота №7</td>
+            <td>Лабораторна <br>Робота №8</td>
+            <td>Лабораторна <br>Робота №9</td>
+        </tr>
+    </table>
+    <table id="LabsContent">
+        <tr>
+            <td><a href="./lab5topic.html">Тема,Мета, Місце <br>розсташування сайту,звіту</a></td>
+            <td rowspan="7" id="Information">
+                <img src="./images/lab5ex4.1.png" alt=""><br>
+                <pre> 
+function ex4(){
+function createArray(n){
+    let arr = [];
+    for (let i = 0; i< n;i++){
+        arr.push(Math.floor(Math.random() * 100));
+    }
+    console.log(`Input Array`);
+    console.log(arr);
+    return arr;
+    
+}
+function sumBetweenMinMax (arr){
+    let minIndex = arr.indexOf(Math.min(...arr));
+    let maxIndex = arr.indexOf(Math.max(...arr));
+
+    let start = Math.min(minIndex,maxIndex)+ 1;
+    let end = Math.max(minIndex,maxIndex);
+    let sum = 0;
+    for( let i=start;i < end;i++ ){
+        sum += arr[i];
+    }
+    
+    return sum;
+}
+function quickSort(arr){
+    if (arr.length <= 1) return arr;
+    
+    let pivot = arr[arr.length - 1];
+    let left =[];
+    let right = [] ;
+    for(let i = 0; i< arr.length - 1 ;i++){
+        if (arr [i] < pivot){
+            left.push(arr[i]);
+        }
+        else{
+            right.push(arr[i]);
+        }
+    }
+    return [...quickSort(left),pivot,...quickSort(right)];
+}
+let n = prompt("Введіть кількість елементів у масиві: ");
+let arr = createArray(n);
+let sum = sumBetweenMinMax (arr);
+console.log(`Cумa елементів між максимальним та мінімальними значеннями масиву - ${sum}`);
+let sortedarr = quickSort(arr);
+console.log ("Відсортований масив", sortedarr);
+
+}</pre>
+                <img src="./images/lab5ex4.2.png" alt="">
+                
+            </td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex1.html">ЗАВДАННЯ№1 ></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex2.html">ЗАВДАННЯ№2</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex3.html">ЗАВДАННЯ№3</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex4.html">ЗАВДАННЯ№4</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5ex5.html">ЗАВДАННЯ№5</a></td>
+        </tr>
+        <tr>
+            <td><a href="./lab5Conclusion.html">ВИСНОВКИ</a></td>
+        </tr>
+
+
+    </table>
+</main>
+</body>
+</html>
